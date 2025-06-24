@@ -34,8 +34,8 @@ const Carosel = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="bg-white/30 hover:bg-white/60 text-black" />
         <CarouselNext className="bg-white/30 hover:bg-white/60 text-black" />
+        <CarouselPrevious className="bg-white/30 hover:bg-white/60 text-black" />
       </Carousel>
     </div>
   );

@@ -15,7 +15,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-red-900 flex justify-between items-center h-auto px-4 sm:px-10 flex-wrap">
+    <div className="w-full bg-red-900 flex justify-center items-center h-auto px-4 sm:px-10 flex-wrap">
       <div className="flex items-center gap-4 m-10">
         <Link href="/" className="flex items-center">
           <Image src="/Logo.png" alt="logo" width={100} height={40} />
