@@ -38,6 +38,9 @@ export function NavigationBlock() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+        <Link href="/home" className="text-white text-xl m-10">
+          Contact Us
+        </Link>
 
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-red-900 text-white text-xl hover:bg-red-900">
