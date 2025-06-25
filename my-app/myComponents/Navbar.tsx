@@ -16,9 +16,9 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <div className="w-full bg-red-900 flex justify-center items-center h-auto px-4 sm:px-10 flex-wrap">
-      <div className="flex items-center gap-4 m-10">
+      <div className="flex items-center mt-7 ">
         <Link href="/" className="flex items-center">
-          <Image src="/Logo.png" alt="logo" width={100} height={40} />
+          <Image src="/Logo.png" alt="logo" width={117} height={46} />
           <span className="ml-2 text-xl sm:text-3xl font-bold text-white">
             St Raymonds PU College
           </span>
