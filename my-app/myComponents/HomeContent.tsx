@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
-import { Card, CardContent } from "@/components/ui/card";
+
 import {
   Carousel,
   CarouselContent,
@@ -67,7 +67,9 @@ function PrincipalsCarousel() {
                 <h3 className="text-xl font-semibold text-gray-800">
                   {principal.name}
                 </h3>
-                <p className="text-gray-500 text-sm mt-1">{principal.role}</p>
+                <p className="text-gray-500 text-sm mt-1 text-wrap">
+                  {principal.role}
+                </p>
               </div>
             </CarouselItem>
           ))}
