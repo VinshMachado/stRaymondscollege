@@ -16,6 +16,8 @@ export function NavigationBlock() {
   return (
     <NavigationMenu viewport={false}>
       <NavigationMenuList>
+        
+ <div className=" flex-wrap flex justify-center items-center gap-4 "> 
       <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-red-900 text-white text-xl hover:bg-red-900">
             About Us
@@ -44,7 +46,6 @@ export function NavigationBlock() {
 
 
 
-
         <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-red-900 text-white text-xl hover:bg-red-900">
             Curricular
@@ -63,26 +64,27 @@ export function NavigationBlock() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <Link href="/home" className="text-white text-xl m-10">
+       
+        <Link href="/home" className="text-white text-xl m-3">
          Streams Offered
         </Link>
 
-        <Link href="/home" className="text-white text-xl m-10">
+        <Link href="/home" className="text-white text-xl m-3">
           Contact Us
         </Link>
 
-        <Link href="/home" className="text-white text-xl m-10">
+        <Link href="/home" className="text-white text-xl m-3">
           Join Us
         </Link>
 
-        <Link href="/home" className="text-white text-xl m-10">
+        <Link href="/home" className="text-white text-xl m-3">
           Gallery
         </Link>
 
-        <Link href="/home" className="text-white text-xl m-10">
+        <Link href="/home" className="text-white text-xl m-3">
           Updates
         </Link>
-
+        </div>
         
       </NavigationMenuList>
     </NavigationMenu>
