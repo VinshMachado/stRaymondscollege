@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
-import { Card, CardContent } from "@/components/ui/card";
+
 import {
   Carousel,
   CarouselContent,
@@ -67,12 +67,21 @@ function PrincipalsCarousel() {
                 <h3 className="text-xl font-semibold text-gray-800">
                   {principal.name}
                 </h3>
-                <p className="text-gray-500 text-sm mt-1">{principal.role}</p>
+                <p className="text-gray-500 text-sm mt-1 text-wrap">
+                  {principal.role}
+                </p>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
       </Carousel>
+      <div className="mt-12 text-xl text-gray-800 leading-relaxed text-center ">
+        Each of these stalwarts brought unique strengths and perspectives,
+        contributing immensely to the academic enrichment and character
+        formation of the students. At present, under the able leadership of Sr.
+        Dr. Sadhana BS, the college continues to flourish, guided by her deep
+        educational insight and dedication to student-centered learning.
+      </div>
     </div>
   );
 }

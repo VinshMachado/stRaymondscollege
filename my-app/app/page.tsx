@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import HomeContent from "@/myComponents/HomeContent";
-
+import Autoplay from "embla-carousel-autoplay";
 const images = [
   "/heros/heros1.jpeg",
   "/heros/heros2.jpeg",
@@ -19,8 +19,17 @@ const images = [
 
 const Carosel = () => {
   return (
-    <div className="w-full mt-32 max-w-6xl mx-auto rounded-xl overflow-hidden shadow-xl">
-      <Carousel className="w-full">
+    <div className="w-full mt-16 max-w-6xl mx-auto rounded-xl overflow-hidden shadow-xl">
+      <Carousel
+        className="w-full"
+        plugins={[
+          Autoplay({
+            delay: 3000,
+            stopOnInteraction: false,
+            stopOnMouseEnter: false,
+          }),
+        ]}
+      >
         <CarouselContent>
           {images.map((img, index) => (
             <CarouselItem key={index}>
