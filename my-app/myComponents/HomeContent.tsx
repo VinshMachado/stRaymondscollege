@@ -73,6 +73,13 @@ function PrincipalsCarousel() {
           ))}
         </CarouselContent>
       </Carousel>
+      <div className="mt-12 text-xl text-gray-800 leading-relaxed text-center ">
+        Each of these stalwarts brought unique strengths and perspectives,
+        contributing immensely to the academic enrichment and character
+        formation of the students. At present, under the able leadership of Sr.
+        Dr. Sadhana BS, the college continues to flourish, guided by her deep
+        educational insight and dedication to student-centered learning.
+      </div>
     </div>
   );
 }
