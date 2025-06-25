@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Jublee = () => {
   return (
     <div className=" w-[98%] mb-4 sm:w-[90%] h-auto mt-10 border shadow-xl p-3 rounded-2xl flex flex-col justify-center items-center bg-white">
-      <h2 className="text-3xl font-bold text-red-800 w-1/2 mb-4 text-center">
+      <h2 className=" text-xl sm:text-3xl font-bold text-red-800 w-1/2 mb-4 text-center">
         Silver Jubilee Year – 2025: A Year of Milestones and New Beginnings
       </h2>
       <div className="max-w-6xl mx-auto  flex flex-col md:flex-row items-center gap-8">
