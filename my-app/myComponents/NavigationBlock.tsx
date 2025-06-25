@@ -18,6 +18,9 @@ export function NavigationBlock() {
       <NavigationMenuList>
         
  <div className=" flex-wrap flex justify-center items-center gap-4 "> 
+  <Link href="/" className="text-white text-xl m-3">
+        Home
+        </Link>
       <NavigationMenuItem>
           <NavigationMenuTrigger className="bg-red-900 text-white text-xl hover:bg-red-900">
             About Us
