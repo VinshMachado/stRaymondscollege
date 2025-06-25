@@ -20,7 +20,7 @@ const images = [
 
 const Carosel = () => {
   return (
-    <div className="w-full mt-16 max-w-6xl mx-auto rounded-xl overflow-hidden shadow-xl">
+    <div className="w-full mt-7 max-w-6xl mx-auto rounded-xl overflow-hidden shadow-xl">
       <Carousel
         className="w-full"
         plugins={[
@@ -34,7 +34,7 @@ const Carosel = () => {
         <CarouselContent>
           {images.map((img, index) => (
             <CarouselItem key={index}>
-              <div className="relative w-full h-[450px]">
+              <div className="relative w-full h-[250px] sm:h-[450px]">
                 <Image
                   src={img}
                   alt={`${index}`}
