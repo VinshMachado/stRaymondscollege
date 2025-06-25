@@ -77,7 +77,7 @@ export function NavigationBlock() {
           Join Us
         </Link>
 
-        <Link href="/home" className="text-white text-xl m-3">
+        <Link href="\galary" className="text-white text-xl m-3">
           Gallery
         </Link>
 
