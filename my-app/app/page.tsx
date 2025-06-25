@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import HomeContent from "@/myComponents/HomeContent";
 
 const images = [
   "/heros/heros1.jpeg",
@@ -41,5 +42,10 @@ const Carosel = () => {
   );
 };
 export default function Home() {
-  return <Carosel />;
+  return (
+    <div>
+      <Carosel />
+      <HomeContent />
+    </div>
+  );
 }
