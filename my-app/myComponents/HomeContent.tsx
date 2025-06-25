@@ -58,13 +58,13 @@ function PrincipalsCarousel() {
                 key={index}
                 className="pl-2 md:pl-4 basis-1/1 sm:basis-1/2 md:basis-1/3"
               >
-                <div className="bg-white rounded-xl shadow-md p-6 text-center h-full">
+                <div className="bg-white rounded-xl shadow-md p-6 text-center h-full group hover:scale-105 transition-transform duration-300 ">
                   <Image
                     src={principal.image}
                     alt={principal.name}
                     width={150}
                     height={150}
-                    className="rounded-full object-cover mx-auto mb-4"
+                    className="rounded-full object-cover mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 ease"
                   />
                   <h3 className="text-xl font-semibold text-gray-800">
                     {principal.name}
