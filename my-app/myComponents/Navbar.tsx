@@ -15,16 +15,21 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-red-900 flex justify-center items-center h-auto px-4 sm:px-10 flex-wrap">
-      <div className="flex items-center mt-7 ">
+    <div className="w-full z-50 relative bg-red-900 flex justify-center items-center h-auto px-4 sm:px-10 flex-wrap">
+      <div className="flex items-center mt-4 ">
         <Link href="/" className="flex items-center">
-          <Image src="/Logo.png" alt="logo" width={117} height={46} />
-          <span className="ml-2 text-xl sm:text-3xl font-bold text-white">
+          <Image
+            src="/Logo.png"
+            alt="logo"
+            width={117 * 1.5}
+            height={46 * 1.5}
+          />
+          <span className="ml-2 text-3xl sm:text-6xl font-bold text-white">
             St Raymonds PU College
           </span>
         </Link>
       </div>
-      <div className="m-10 hidden sm:block">
+      <div className="m-2 hidden sm:block">
         <NavigationBlock />
       </div>
     </div>

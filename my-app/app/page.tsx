@@ -1,4 +1,5 @@
 "use client";
+import { Jublee } from "@/myComponents/Jublee";
 
 import {
   Carousel,
@@ -52,9 +53,19 @@ const Carosel = () => {
 };
 export default function Home() {
   return (
-    <div>
-      <Carosel />
-      <HomeContent />
+    <div className="w-full">
+      <Carosel /> <HomeContent />
+      <div className="relative w-full mb-5   flex justify-center items-center overflow-hidden">
+        <Image
+          src="/background image.avif"
+          alt="background"
+          fill
+          className="object-cover opacity-20"
+        />
+        <div className="relative flex justify-center items-center z-10 w-full max-w-6xl px-4">
+          <Jublee />
+        </div>
+      </div>
     </div>
   );
 }

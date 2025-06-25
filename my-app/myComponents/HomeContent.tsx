@@ -8,6 +8,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
+import { Jublee } from "./Jublee";
 
 function PrincipalsCarousel() {
   const principals = [
@@ -35,46 +36,49 @@ function PrincipalsCarousel() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="max-w-6xl mx-auto px-4 py-12 w-full">
       <h2 className="text-3xl font-bold text-center text-red-800 mb-8">
         Principals Who Shaped the Institution
       </h2>
-      <Carousel
-        opts={{ align: "start", loop: true }}
-        plugins={[
-          Autoplay({
-            delay: 2000,
-            stopOnInteraction: true,
-            stopOnMouseEnter: false,
-          }),
-        ]}
-        className="w-full overflow-hidden"
-      >
-        <CarouselContent className="-ml-2 md:-ml-4 animate-marquee whitespace-nowrap">
-          {principals.concat(principals).map((principal, index) => (
-            <CarouselItem
-              key={index}
-              className="pl-2 md:pl-4 basis-1/1 sm:basis-1/2 md:basis-1/3"
-            >
-              <div className="bg-white rounded-xl shadow-md p-6 text-center h-full">
-                <Image
-                  src={principal.image}
-                  alt={principal.name}
-                  width={150}
-                  height={150}
-                  className="rounded-full object-cover mx-auto mb-4"
-                />
-                <h3 className="text-xl font-semibold text-gray-800">
-                  {principal.name}
-                </h3>
-                <p className="text-gray-500 text-sm mt-1 text-wrap">
-                  {principal.role}
-                </p>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-      </Carousel>
+      <div className="w-full ">
+        <Carousel
+          opts={{ align: "start", loop: true }}
+          plugins={[
+            Autoplay({
+              delay: 2000,
+              stopOnInteraction: true,
+              stopOnMouseEnter: false,
+            }),
+          ]}
+          className="w-full overflow-hidden"
+        >
+          <CarouselContent className="-ml-2 md:-ml-4 animate-marquee whitespace-nowrap">
+            {principals.concat(principals).map((principal, index) => (
+              <CarouselItem
+                key={index}
+                className="pl-2 md:pl-4 basis-1/1 sm:basis-1/2 md:basis-1/3"
+              >
+                <div className="bg-white rounded-xl shadow-md p-6 text-center h-full">
+                  <Image
+                    src={principal.image}
+                    alt={principal.name}
+                    width={150}
+                    height={150}
+                    className="rounded-full object-cover mx-auto mb-4"
+                  />
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {principal.name}
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-1 text-wrap">
+                    {principal.role}
+                  </p>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </div>
+
       <div className="mt-12 text-xl text-gray-800 leading-relaxed text-center ">
         Each of these stalwarts brought unique strengths and perspectives,
         contributing immensely to the academic enrichment and character
@@ -92,7 +96,7 @@ export default function HomeContent() {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className="max-w-5xl mx-auto px-4 py-12 text-gray-800"
+      className="max-w-5xl w-full mx-auto px-4 py-12 text-gray-800"
     >
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -113,6 +117,7 @@ export default function HomeContent() {
           girls.
         </p>
       </motion.div>
+
       <PrincipalsCarousel />
     </motion.section>
   );
