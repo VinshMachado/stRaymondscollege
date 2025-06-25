@@ -19,7 +19,7 @@ const images = [
 
 const Carosel = () => {
   return (
-    <div className="w-full mt-16 max-w-6xl mx-auto rounded-xl overflow-hidden shadow-xl">
+    <div className="w-full mt-32 max-w-6xl mx-auto rounded-xl overflow-hidden shadow-xl">
       <Carousel className="w-full">
         <CarouselContent>
           {images.map((img, index) => (
