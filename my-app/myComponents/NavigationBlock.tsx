@@ -72,14 +72,14 @@ export function NavigationBlock() {
           </Link>
 
           <Link
-            href="/home"
+            href="/contactUs"
             className="text-white text-xl m-3 hover:border-b-2"
           >
             Contact Us
           </Link>
 
           <Link
-            href="\galary"
+            href="/galary"
             className="text-white text-xl m-3 hover:border-b-2"
           >
             Gallery
