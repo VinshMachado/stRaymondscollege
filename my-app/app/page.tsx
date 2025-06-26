@@ -16,6 +16,7 @@ const images = [
   "/heros/heros2.jpeg",
   "/heros/heros3.jpeg",
   "/heros/heros4.jpeg",
+  "/GalleryImages/annualbodymeet/4.jpeg",
 ];
 
 const Carosel = () => {

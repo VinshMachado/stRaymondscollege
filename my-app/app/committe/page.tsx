@@ -4,39 +4,36 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const correspondents = [
   {
-    name: "Sr. Inviolatha",
-    image: "/correspondents/inviolatha.jpg",
-    designation: "Former Correspondent",
+    name: "Rev Sr Roseceline  ",
+    image:
+      "/Sisters/President - Rev Sr Roseceline BS - Superior General & President BES.jpeg",
+    designation: "Superior General & President BES",
   },
   {
-    name: "Sr. Marie Lyta",
-    image: "/correspondents/marie-lyta.jpg",
-    designation: "Former Correspondent",
+    name: "Rev Sr  Lilly Pereira ",
+    image:
+      "/Sisters/Rev Sr  Lilly Pereira BS - Provincial Superior & Corporate Manager.jpeg",
+    designation: "Provincial Superior & Corporate Manager",
   },
   {
-    name: "Sr. Christella",
-    image: "/correspondents/christella.jpg",
-    designation: "Former Correspondent",
+    name: "Rev Sr Cicilia Mendonca  ",
+    image: "/Sisters/Rev Sr Cicilia Mendonca BS - Correspondent .jpg",
+    designation: " Correspondent",
   },
   {
-    name: "Sr. Mariola",
-    image: "/correspondents/mariola.jpg",
-    designation: "Former Correspondent",
+    name: "Rev Sr Sandhya  ",
+    image: "/Sisters/Secretary - Rev Sr Sandhya BS .jpeg",
+    designation: "Secretary",
   },
   {
-    name: "Sr. Lilly Pereira",
-    image: "/correspondents/lilly-pereira.jpg",
-    designation: "Former Correspondent",
+    name: "Sr Dr Sadhana  ",
+    image: "/Sisters/Sr Dr Sadhana BS - Principal.jpeg",
+    designation: "Principal",
   },
   {
-    name: "Sr. Shubha",
-    image: "/correspondents/shubha.jpg",
-    designation: "Former Correspondent",
-  },
-  {
-    name: "Sr. Cicilia Mendonca",
-    image: "/correspondents/cicilia-mendonca.jpg",
-    designation: "Current Correspondent",
+    name: "Sr Lavita BS",
+    image: "/Sisters/Sr Lavita BS - Superior .jpeg",
+    designation: "Superior",
   },
 ];
 
@@ -46,33 +43,28 @@ const page = () => {
       <h2 className="text-3xl font-bold text-red-800 text-center mb-10">
         Dedicated Correspondents
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="  flex justify-center items-center flex-wrap ">
         {correspondents.map((person) => (
-          <Card key={person.name} className="bg-white shadow-md">
-            <CardContent className="p-4 flex flex-col items-center">
-              <Image
-                src={person.image}
-                alt={person.name}
-                width={180}
-                height={180}
-                className="rounded-full object-cover mb-4"
-              />
-              <h3 className="text-xl font-semibold text-gray-800 text-center">
+          <Card key={person.name} className="bg-white shadow-md m-5">
+            <CardContent className="p-4  flex flex-col items-center">
+              <div className="w-40 h-40 rounded-full bg-amber-300 relative overflow-hidden">
+                <Image
+                  src={person.image}
+                  alt={person.name}
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+              <h3 className="text-xl text-wrap font-semibold text-gray-800 text-center">
                 {person.name}
               </h3>
-              <p className="text-sm text-gray-600 text-center mt-1">
+              <p className="text-sm text-wrap text-gray-600 text-center mt-1">
                 {person.designation}
               </p>
             </CardContent>
           </Card>
         ))}
       </div>
-
-      <p className="text-lg text-gray-800 leading-relaxed mt-10 text-center max-w-3xl mx-auto">
-        Currently, <strong>Sr. Cicilia Mendonca</strong> serves as the
-        Correspondent, providing consistent and wise leadership, and ensuring
-        the institution’s continued alignment with its mission and values.
-      </p>
     </div>
   );
 };
