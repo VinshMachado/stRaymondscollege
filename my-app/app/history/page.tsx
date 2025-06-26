@@ -1,12 +1,10 @@
 "use client";
 
-import { Card } from "@/components/ui/card";
-
 export default function AboutStRaymonds() {
   return (
     <div className="max-w-5xl mx-auto px-4 py-16 text-gray-800 space-y-10">
       <h1 className="text-2xl sm:text-4xl font-bold text-center text-red-800">
-        St Raymond’s Pre-University College, Vamanjoor
+        {"St Raymond’s Pre-University College, Vamanjoor"}
       </h1>
       <h2 className="text-2xl font-semibold text-center text-gray-700">
         A Beacon of Knowledge, Values, and Holistic Development
