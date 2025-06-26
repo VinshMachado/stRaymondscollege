@@ -1,7 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
+import { motion, useInView } from "framer-motion";
 
 const page = () => {
   const galleries = {
@@ -77,27 +78,43 @@ const page = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center mt-10">
+    <div className="w-full flex flex-col items-center mt-10 overflow-hidden">
       {Object.entries(galleries).map(([title, { path, images }]) => (
         <div key={title} className="w-full flex flex-col items-center mb-16">
           <h1 className="text-xl sm:text-2xl font-bold text-black mb-4 text-center">
             {title}
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-10">
-            {images.map((item, index) => (
-              <div
-                key={index}
-                className="bg-gray-100 p-4 rounded-2xl flex justify-center items-center"
-              >
-                <Image
-                  src={`/${path}/${item.image}`}
-                  alt={`${title} Image ${index + 1}`}
-                  width={item.width}
-                  height={item.height}
-                  className="rounded-lg"
-                />
-              </div>
-            ))}
+            {images.map((item, index) => {
+              const ref = useRef(null);
+              const isInView = useInView(ref, {
+                once: true,
+                margin: "0px 0px -100px 0px",
+              });
+
+              return (
+                <motion.div
+                  key={index}
+                  ref={ref}
+                  initial={{ opacity: 0, x: 100 }}
+                  animate={isInView ? { opacity: 1, x: 0 } : {}}
+                  transition={{
+                    duration: 0.6,
+                    ease: "easeOut",
+                    delay: index * 0.03,
+                  }}
+                  className="bg-gray-100 p-4 rounded-2xl flex justify-center items-center"
+                >
+                  <Image
+                    src={`/${path}/${item.image}`}
+                    alt={`${title} Image ${index + 1}`}
+                    width={item.width}
+                    height={item.height}
+                    className="rounded-lg"
+                  />
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       ))}

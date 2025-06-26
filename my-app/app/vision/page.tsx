@@ -1,53 +1,57 @@
 'use client';
 
-import React from "react";
+import React, { useRef } from "react";
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 
+// Animation wrapper with overflow fix
 const AnimatedSection = ({ children }: { children: React.ReactNode }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <motion.div
-      ref={ref}
-      initial={{ x: 100, opacity: 0 }}
-      animate={isInView ? { x: 0, opacity: 1 } : {}}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-    >
-      {children}
-    </motion.div>
+    <div className="overflow-hidden">
+      <motion.div
+        ref={ref}
+        initial={{ x: 100, opacity: 0 }}
+        animate={isInView ? { x: 0, opacity: 1 } : {}}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        {children}
+      </motion.div>
+    </div>
   );
 };
 
 const page = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <div className="flex flex-col items-center mb-10">
-  <motion.div
-    initial={{ scale: 1.3, opacity: 0 }}
-    animate={{ scale: 1, opacity: 1 }}
-    transition={{ duration: 0.8, ease: "easeOut" }}
-    className="flex flex-col items-center justify-center"
-  >
-    <Image
-      src="/Logo.png"
-      alt="College Logo"
-      width={250}
-      height={250}
-      className="mb-4"
-    />
-    <h2 className="text-4xl font-bold text-red-800 text-center">
-      St Raymond’s P.U. College
-    </h2>
-  </motion.div>
-</div>
+    <div className="max-w-6xl mx-auto px-4 py-12 overflow-hidden">
+      {/* Logo with entry animation */}
+      <div className="flex flex-col items-center mb-10 overflow-hidden">
+        <motion.div
+          initial={{ scale: 1.3, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col items-center justify-center"
+        >
+          <Image
+            src="/Logo.png"
+            alt="College Logo"
+            width={250}
+            height={250}
+            className="mb-4"
+          />
+          <h2 className="text-4xl font-bold text-red-800 text-center">
+            St Raymond’s P.U. College
+          </h2>
+        </motion.div>
+      </div>
 
+      {/* Animated content */}
       <Card className="bg-white shadow-none border-none">
         <CardContent className="p-0 text-gray-800 text-lg leading-relaxed space-y-12">
-          
+
           <AnimatedSection>
             <div>
               <h3 className="text-2xl font-semibold text-red-700 mb-2">Our Vision</h3>
