@@ -96,7 +96,7 @@ export function NavigationBlock() {
             href="/home"
             className="text-white text-xl m-3 hover:border-b-2   "
           >
-            Committed Members
+            Committe Members
           </Link>
         </div>
       </NavigationMenuList>
