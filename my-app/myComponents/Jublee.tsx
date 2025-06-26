@@ -14,7 +14,7 @@ export const Jublee = () => {
       ref={ref}
       initial={{ x: 100, opacity: 0 }}
       animate={isInView ? { x: 0, opacity: 1 } : {}}
-      transition={{ duration: 1.5, ease: "easeOut" }}
+      transition={{ duration: 1, ease: "easeOut" }}
       className="w-[98%] mb-4 sm:w-[90%] h-auto mt-10 border shadow-xl p-3 rounded-2xl flex flex-col justify-center items-center bg-white"
     >
       <h2 className="text-xl sm:text-3xl font-bold text-red-800 w-1/2 mb-4 text-center">
