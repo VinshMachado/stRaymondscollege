@@ -15,7 +15,7 @@ const page = () => {
             </h2>
           </div>
 
-          <p className="text-lg text-gray-800 leading-relaxed">
+          <p className="text-lg text-gray-800 leading-relaxed text-center p-10">
             ಸೇಂಟ್ ರೈಮಂಡ್ ಪದವಿ ಪೂರ್ವ ಕಾಲೇಜು , ವಾಮಂಜೂರು ಇದರ ಬೆಳ್ಳಿ ಹಬ್ಬದ ಲಾಂಛನವು
             ನಮ್ಮ ಶಿಕ್ಷಣ ದರ್ಶನದ ಆಳವಾದ ಅರ್ಥವನ್ನು ಪ್ರತಿಬಿಂಬಿಸುತ್ತದೆ. ಈ ಲಾಂಛನದಲ್ಲಿ
             ಮಧ್ಯಭಾಗದಲ್ಲಿರುವ ಮರವು ವಿದ್ಯೆಯ ಪ್ರತೀಕವಾಗಿದ್ದು, ಮೌಲ್ಯಾಧಾರಿತ ಶಿಕ್ಷಣದ
