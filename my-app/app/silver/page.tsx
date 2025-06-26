@@ -4,7 +4,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 const page = () => {
   return (
-    <div className="w-full h-auto flex flex-col justify-center items-center">
+    <div className="w-full h-auto flex flex-col justify-center items-center overflow-hidden">
       <Jublee />
 
       <Card className=" shadow-none mt-10 border-0">

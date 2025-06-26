@@ -31,7 +31,7 @@ export function NavigationBlock() {
                     <Link href="/vision">Vision and Mission</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild className="bg-white">
-                    <Link href="#">History</Link>
+                    <Link href="/history">History</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild className="bg-white">
                     <Link href="/silver" className="bg-white">
@@ -39,7 +39,7 @@ export function NavigationBlock() {
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild className="bg-white">
-                    <Link href="#">Message from the Principal</Link>
+                    <Link href="/principle">Message from the Principal</Link>
                   </NavigationMenuLink>
                 </li>
               </ul>
@@ -54,10 +54,10 @@ export function NavigationBlock() {
               <ul className="grid w-[200px] gap-4 bg-white">
                 <li className="bg-white">
                   <NavigationMenuLink asChild className="bg-white">
-                    <Link href="#">Environment Day</Link>
+                    <Link href="/envDay">Environment Day</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild className="bg-white">
-                    <Link href="#">Annual Day</Link>
+                    <Link href="/annualDay">Annual Day</Link>
                   </NavigationMenuLink>
                 </li>
               </ul>

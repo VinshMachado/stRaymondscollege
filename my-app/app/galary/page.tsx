@@ -78,7 +78,7 @@ const page = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center mt-10">
+    <div className="w-full flex flex-col items-center mt-10 overflow-hidden">
       {Object.entries(galleries).map(([title, { path, images }]) => (
         <div key={title} className="w-full flex flex-col items-center mb-16">
           <h1 className="text-xl sm:text-2xl font-bold text-black mb-4 text-center">

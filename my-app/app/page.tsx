@@ -20,7 +20,7 @@ const images = [
 
 const Carosel = () => {
   return (
-    <div className="w-full mt-7 max-w-6xl mx-auto rounded-xl overflow-hidden shadow-xl">
+    <div className="w-full mt-7 max-w-6xl mx-auto rounded-xl overflow-hidden shadow-xl overflow-x-hidden">
       <Carousel
         className="w-full"
         plugins={[
