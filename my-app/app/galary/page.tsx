@@ -1,23 +1,109 @@
+'use client';
+
 import React from "react";
 import Image from "next/image";
 
 const page = () => {
+  const galleries = {
+    "Annual Body Meet": {
+      path: "GalleryImages/annualbodymeet",
+      images: [
+        { image: "1.jpeg", width: 320, height: 230 },
+        { image: "2.jpeg", width: 320, height: 230 },
+        { image: "3.jpeg", width: 320, height: 230 },
+        { image: "4.jpeg", width: 320, height: 230 },
+        { image: "5.jpeg", width: 320, height: 230 },
+        { image: "6.jpeg", width: 320, height: 230 },
+        { image: "7.jpeg", width: 320, height: 230 },
+        { image: "8.jpeg", width: 320, height: 230 },
+        { image: "9.jpeg", width: 320, height: 230 },
+        { image: "10.jpeg", width: 320, height: 230 },
+        { image: "11.jpeg", width: 320, height: 230 },
+        { image: "12.jpeg", width: 320, height: 230 },
+        { image: "13.jpeg", width: 320, height: 230 },
+        { image: "14.jpeg", width: 320, height: 230 },
+        { image: "15.jpeg", width: 320, height: 230 },
+        { image: "16.jpeg", width: 320, height: 230 },
+        { image: "17.jpeg", width: 320, height: 230 },
+        { image: "18.jpeg", width: 320, height: 230 }
+      ]
+    },
+    "Environmental Day": {
+      path: "GalleryImages/enviornment",
+      images: [
+        { image: "1.jpeg", width: 320, height: 230 },
+        { image: "2.jpeg", width: 320, height: 230 },
+        { image: "3.jpeg", width: 320, height: 230 },
+        { image: "4.jpeg", width: 320, height: 230 },
+        { image: "5.jpeg", width: 320, height: 230 },
+        { image: "6.jpeg", width: 320, height: 230 },
+        { image: "7.jpeg", width: 320, height: 230 }
+      ]
+    },
+    "Investiture ": {
+      path: "GalleryImages/investiture",
+      images: [
+        { image: "1.jpeg", width: 320, height: 230 },
+        { image: "2.jpeg", width: 320, height: 230 },
+        { image: "3.jpeg", width: 320, height: 230 },
+        { image: "4.jpeg", width: 320, height: 230 },
+        { image: "5.jpeg", width: 320, height: 230 },
+        { image: "6.jpeg", width: 320, height: 230 },
+        { image: "7.jpeg", width: 320, height: 230 },
+        { image: "8.jpeg", width: 320, height: 230 },
+        { image: "9.jpeg", width: 320, height: 230 },
+        { image: "10.jpeg", width: 320, height: 230 },
+
+        { image: "12.jpeg", width: 320, height: 230 },
+        { image: "13.jpeg", width: 320, height: 230 },
+        { image: "14.jpeg", width: 320, height: 230 },
+        { image: "15.jpeg", width: 320, height: 230 },
+        { image: "16.jpeg", width: 320, height: 230 }
+      
+      ]
+    },
+    "Mass ": {
+      path: "GalleryImages/mass",
+      images: [
+        { image: "1.jpeg", width: 320, height: 230 },
+        { image: "2.jpeg", width: 320, height: 230 },
+        { image: "3.jpeg", width: 320, height: 230 },
+        { image: "4.jpeg", width: 320, height: 230 },
+        { image: "5.jpeg", width: 320, height: 230 },
+        { image: "6.jpeg", width: 320, height: 230 },
+        { image: "7.jpeg", width: 320, height: 230 },
+        { image: "8.jpeg", width: 320, height: 230 }
+        
+      
+      ]
+    },
+  };
+
   return (
-    <div className="w-full justify-center items-center flex flex-col mt-10">
-      <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4">
-        Headding
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-10">
-        <div className="bg-gray-100 p-4 rounded-2xl flex justify-center items-center">
-          <Image
-            src="/WhatsApp Image 2025-06-20 at 1.20.03 PM.jpeg"
-            alt="Gallery Image"
-            width={320}
-            height={230}
-            className="rounded-lg"
-          />
+    <div className="w-full flex flex-col items-center mt-10">
+      {Object.entries(galleries).map(([title, { path, images }]) => (
+        <div key={title} className="w-full flex flex-col items-center mb-16">
+          <h1 className="text-4xl sm:text-5xl font-bold text-black mb-4 text-center">
+            {title}
+          </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 py-10">
+            {images.map((item, index) => (
+              <div
+                key={index}
+                className="bg-gray-100 p-4 rounded-2xl flex justify-center items-center"
+              >
+                <Image
+                  src={`/${path}/${item.image}`}
+                  alt={`${title} Image ${index + 1}`}
+                  width={item.width}
+                  height={item.height}
+                  className="rounded-lg"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 };
