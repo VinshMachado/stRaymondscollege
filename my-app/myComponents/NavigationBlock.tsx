@@ -39,7 +39,7 @@ export function NavigationBlock() {
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild className="bg-white">
-                    <Link href="#">Message from the Principal</Link>
+                    <Link href="/principle">Message from the Principal</Link>
                   </NavigationMenuLink>
                 </li>
               </ul>
@@ -72,7 +72,7 @@ export function NavigationBlock() {
           </Link>
 
           <Link
-            href="/home"
+            href="/contactUs"
             className="text-white text-xl m-3 hover:border-b-2"
           >
             Contact Us

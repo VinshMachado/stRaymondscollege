@@ -21,16 +21,15 @@ const MoblieNav = () => {
     const routes: Record<string, string> = {
       Home: "/",
       "Streams Offered": "/streams",
-      "Contact Us": "/contact",
-      "Join Us": "/join",
+      "Contact Us": "/contactUs",
       Gallery: "/galary",
-      "Commiitte Member": "/committee",
+      "Commiitte Member": "/committe",
       "Vision and Mission": "/vision",
-      History: "/about/history",
-      "Silver jubilee": "/about/silver-jubilee",
-      "Message from the Principal": "/about/principal",
-      "Environment Day": "/events/environment-day",
-      "Annual Day": "/events/annual-day",
+      History: "/history",
+      "Silver jubilee": "/silver",
+      "Message from the Principal": "/principle",
+      "Environment Day": "/envDay",
+      "Annual Day": "/annualDay",
     };
 
     const path = routes[value];
@@ -48,7 +47,6 @@ const MoblieNav = () => {
           <SelectItem value="Home">Home</SelectItem>
           <SelectItem value="Streams Offered">Streams Offered</SelectItem>
           <SelectItem value="Contact Us">Contact Us</SelectItem>
-          <SelectItem value="Join Us">Join Us</SelectItem>
           <SelectItem value="Gallery">Gallery</SelectItem>
           <SelectItem value="Commiitte Member">Commiitte Member</SelectItem>
 
