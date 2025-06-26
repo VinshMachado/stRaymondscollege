@@ -47,7 +47,7 @@ const page = () => {
         {correspondents.map((person) => (
           <Card key={person.name} className="bg-white shadow-md m-5">
             <CardContent className="p-4  flex flex-col items-center">
-              <div className="w-40 h-40 rounded-full bg-amber-300 relative overflow-hidden">
+              <div className="w-40 h-40 rounded-full  relative overflow-hidden">
                 <Image
                   src={person.image}
                   alt={person.name}
