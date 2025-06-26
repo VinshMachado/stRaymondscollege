@@ -65,7 +65,7 @@ export function NavigationBlock() {
           </NavigationMenuItem>
 
           <Link
-            href="/home"
+            href="/streams"
             className="text-white text-xl m-3 hover:border-b-2"
           >
             Streams Offered
@@ -79,13 +79,6 @@ export function NavigationBlock() {
           </Link>
 
           <Link
-            href="/home"
-            className="text-white text-xl m-3 hover:border-b-2"
-          >
-            Join Us
-          </Link>
-
-          <Link
             href="\galary"
             className="text-white text-xl m-3 hover:border-b-2"
           >
@@ -93,7 +86,7 @@ export function NavigationBlock() {
           </Link>
 
           <Link
-            href="/home"
+            href="/committe"
             className="text-white text-xl m-3 hover:border-b-2   "
           >
             Committe Members
