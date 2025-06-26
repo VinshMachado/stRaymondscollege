@@ -11,12 +11,7 @@ export default function AboutStRaymonds() {
       </h2>
 
       <p>
-        St Raymond’s Pre-University College, Vamanjoor is a
-        government-recognized institution (Govt. Order No. ED52 SHH 2001, dated
-        21.06.2001) run by the Bethany Educational Society, Mangaluru. As a
-        minority institution, it upholds the vision of its founder, Msgr. R.F.C.
-        Mascharenhas, who dedicated his life to bringing education to the
-        marginalized.
+        {`St Raymond’s Pre-University College, Vamanjoor is a government-recognized institution (Govt. Order No. ED52 SHH 2001, dated 21.06.2001) run by the Bethany Educational Society, Mangaluru. As a minority institution, it upholds the vision of its founder, Msgr. R.F.C. Mascharenhas, who dedicated his life to bringing education to the marginalized.`}
       </p>
 
       <p>
@@ -51,9 +46,9 @@ export default function AboutStRaymonds() {
         Support from the Bethany Educational Society
       </h3>
       <p>
-        Key contributors include Rev. Sr. Jyoti, Rev. Sr. Wilberta, Rev. Sr.
+        {`Key contributors include Rev. Sr. Jyoti, Rev. Sr. Wilberta, Rev. Sr.
         Rose Celine, and Corporate Managers who guided the college’s strategic
-        growth. Currently, the college is supported by Rev Sr Lilly Pereira.
+        growth. Currently, the college is supported by Rev Sr Lilly Pereira.`}
       </p>
 
       <h3 className="text-xl font-semibold text-red-700">
@@ -128,7 +123,7 @@ export default function AboutStRaymonds() {
       </h3>
       <ul className="list-disc ml-6">
         <li>Science Park</li>
-        <li>Poor Students' Fund</li>
+        <li>{"Poor Students' Fund"}</li>
         <li>Free education for 90%+ scorers</li>
         <li>College Magazine & Documentary</li>
         <li>Anthem & Celebration Events</li>
