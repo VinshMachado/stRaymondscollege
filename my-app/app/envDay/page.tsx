@@ -4,14 +4,16 @@ export default function EnvironmentDay() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       <h2 className="text-3xl font-bold text-green-700 text-center mb-6">
-        “Sow sustainability, Reap a future” – Environment Day Celebration
+        {`“Sow sustainability, Reap a future” – Environment Day Celebration`}
       </h2>
       <p className="text-lg text-gray-800 leading-relaxed mb-8 text-center">
-        St Raymond P U College celebrated World Environment Day with great
+        {` St Raymond P U College celebrated World Environment Day with great
         enthusiasm and a renewed sense of purpose under the guidance of the
         Science Faculty and Mr. Jayaram, NSS Coordinator, on June 5, 2025. This
-        year’s theme, <strong>“Sow sustainability, Reap a future,”</strong>{" "}
-        served as a powerful call to action for students and staff alike.
+        year’s theme, `}
+        <strong>{`“Sow sustainability, Reap a future,”`}</strong>{" "}
+        {`served as a
+        powerful call to action for students and staff alike.`}
       </p>
 
       <div className="grid md:grid-cols-2 gap-6">
@@ -50,7 +52,8 @@ export default function EnvironmentDay() {
           </p>
           <p className="text-gray-800 text-lg">
             <strong>Mevreesh</strong> anchored the event, and{" "}
-            <strong>Raulathul Shazin</strong>'s speech inspired young minds. The{" "}
+            <strong>Raulathul Shazin</strong>
+            {`'s speech inspired young minds. The`}{" "}
             <strong>vote of thanks</strong> was proposed by{" "}
             <strong>Sranvi</strong>.
           </p>
