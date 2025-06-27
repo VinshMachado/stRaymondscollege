@@ -12,6 +12,7 @@ import Image from "next/image";
 import HomeContent from "@/myComponents/HomeContent";
 import Autoplay from "embla-carousel-autoplay";
 const images = [
+ "/College Building.jpg",
   "/heros/heros1.jpeg",
   "/heros/heros2.jpeg",
   "/heros/heros3.jpeg",
