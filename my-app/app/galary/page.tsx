@@ -42,7 +42,7 @@ const page = () => {
       ],
     },
     "Investiture Ceremony ": {
-      path: "GalleryImages/investiture",
+      path: "GalleryImages/Inv",
       images: [
         { image: "1.jpeg", width: 320, height: 230 },
         { image: "2.jpeg", width: 320, height: 230 },
