@@ -20,12 +20,12 @@ function PrincipalsCarousel() {
     {
       name: "Sr. Cicilia Mendonca",
       role: "Principal (2002 - May 31, 2010)",
-      image: "/Principles/Sr  Cecilia DSouza BS.jpeg",
+      image: "/Principles/Sr Cicilia Mendonca BS.jpg",
     },
     {
       name: "Sr. Cicilia D’Souza",
       role: "Principal (June 2010 - May 31, 2015)",
-      image: "/Principles/Sr Cicilia Mendonca BS.jpg",
+      image: "/Principles/Sr  Cecilia DSouza BS.jpeg",
     },
     {
       name: "Sr. Anita Lydia BS",

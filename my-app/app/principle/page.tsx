@@ -1,11 +1,17 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function PrincipalMessage() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <div className="bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-8">
+    <div className="max-w-6xl mx-auto px-4 py-12 overflow-hidden">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="bg-white p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-8"
+      >
         <div className="flex-shrink-0">
           <Image
             src="/Principles/Sr Sadhana BS.jpeg"
@@ -34,7 +40,7 @@ export default function PrincipalMessage() {
             - Sr.Dr. Sadhana BS, Principal
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
