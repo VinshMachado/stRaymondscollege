@@ -39,7 +39,7 @@ export default function AboutStRaymonds() {
     ],
     [
       "Dedicated Correspondents",
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-6" key={"thing1"}>
         {[
           "Sr. Inviolatha",
           "Sr. Marie Lyta",
@@ -55,7 +55,7 @@ export default function AboutStRaymonds() {
     ],
     [
       "Principals Who Shaped Us",
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-6" key={"thing2"}>
         {[
           "Sr. Dr Sadhana BS – Supervisor & Principal (2001–2004, 2015–2021, 2025– )",
           "Sr. Cicilia Mendonca – Principal (2002–2010)",
@@ -68,7 +68,7 @@ export default function AboutStRaymonds() {
     ],
     [
       "Academic Streams Offered",
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-6" key={"thing3"}>
         {["PCMB", "PCMC", "HEBA", "EBAC", "EBAS", "HEPS"].map((stream, i) => (
           <li key={i}>{stream}</li>
         ))}
@@ -84,7 +84,7 @@ export default function AboutStRaymonds() {
     ],
     [
       "Holistic Education",
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-6" key={"thing4"}>
         {[
           "State and national level sports and cultural activities",
           "NSS and Rovers & Rangers",
@@ -97,7 +97,7 @@ export default function AboutStRaymonds() {
     ],
     [
       "Facilities",
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-6" key={"thing5"}>
         {[
           "Science and Computer Labs",
           "Rich Library",
@@ -110,7 +110,7 @@ export default function AboutStRaymonds() {
     ],
     [
       "Silver Jubilee – 2025",
-      <ul className="list-disc ml-6">
+      <ul className="list-disc ml-6" key={"thing6"}>
         {[
           "Science Park",
           "Poor Students' Fund",
