@@ -41,23 +41,8 @@ const page = () => {
         { image: "7.jpeg", width: 320, height: 230 },
       ],
     },
-    
-    "St Raymond’s P U College Inaugurates its Silver Jubilee Year with a Solemn Holy Eucharistic Celebration":
-      {
-        path: "GalleryImages/mass",
-        images: [
-          { image: "1.jpeg", width: 320, height: 230 },
-          { image: "2.jpeg", width: 320, height: 230 },
-          { image: "3.jpeg", width: 320, height: 230 },
-          { image: "4.jpeg", width: 320, height: 230 },
-          { image: "5.jpeg", width: 320, height: 230 },
-          { image: "6.jpeg", width: 320, height: 230 },
-          { image: "7.jpeg", width: 320, height: 230 },
-          { image: "8.jpeg", width: 320, height: 230 },
-        ],
-      },
-      "Investiture Ceremony ": {
-      path: "GalleryImages/investiture",
+    "Investiture Ceremony ": {
+      path: "GalleryImages/Inv",
       images: [
         { image: "1.jpeg", width: 320, height: 230 },
         { image: "2.jpeg", width: 320, height: 230 },
@@ -76,7 +61,20 @@ const page = () => {
         { image: "16.jpeg", width: 320, height: 230 },
       ],
     },
-
+    "St Raymond’s P U College Inaugurates its Silver Jubilee Year with a Solemn Holy Eucharistic Celebration":
+      {
+        path: "GalleryImages/mass",
+        images: [
+          { image: "1.jpeg", width: 320, height: 230 },
+          { image: "2.jpeg", width: 320, height: 230 },
+          { image: "3.jpeg", width: 320, height: 230 },
+          { image: "4.jpeg", width: 320, height: 230 },
+          { image: "5.jpeg", width: 320, height: 230 },
+          { image: "6.jpeg", width: 320, height: 230 },
+          { image: "7.jpeg", width: 320, height: 230 },
+          { image: "8.jpeg", width: 320, height: 230 },
+        ],
+      },
   };
 
   return (
