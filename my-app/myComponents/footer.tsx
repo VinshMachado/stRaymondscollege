@@ -9,8 +9,7 @@ const footer = () => {
         <p className="text-2xl font-bold mb-2">Contact Us</p>
         <p className="text-md">St. Raymond's PU College,</p>
         <p className="text-md">Vamanjoor,Kudupu,Thiruvail,Karnataka 575028</p>
-        <p className="text-md">Phone: +91 988 060 3858</p>
-        <p className="text-md">Phone: +91 636 050 8493</p>
+        <p className="text-md">Phone: +91 948 280 1764</p>
         <p className="text-md">Email: srpucv2001@gmail.com</p>
       </div>
     </div>
