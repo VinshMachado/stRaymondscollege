@@ -7,14 +7,28 @@ const page = () => {
     <div className="w-full h-auto flex flex-col justify-center items-center overflow-hidden">
       <Jublee />
 
-      <Card className=" shadow-none mt-10 border-0">
+      <Card className="shadow-none mt-10 border-0">
         <CardContent className="p-6">
           <div className="flex flex-col items-center mb-6">
-            <h2 className="text-3xl font-bold  text-red-800 text-center mt-4">
+            <h2 className="text-3xl font-bold text-red-800 text-center mt-4">
               ಬೆಳ್ಳಿ ಹಬ್ಬದ ಲಾಂಛನದ ವಿವರಣೆ
             </h2>
           </div>
 
+          {/* Top 3 Videos */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8 w-full px-4">
+            <video className="w-full rounded-lg h-56" controls>
+              <source src="/videos/video1.mp4" type="video/mp4" />
+            </video>
+            <video className="w-full rounded-lg h-56" controls>
+              <source src="/videos/video2.mp4" type="video/mp4" />
+            </video>
+            <video className="w-full rounded-lg h-56" controls>
+              <source src="/videos/video3.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          {/* Written Content */}
           <p className="text-lg text-gray-800 leading-relaxed text-center p-10">
             ಸೇಂಟ್ ರೈಮಂಡ್ ಪದವಿ ಪೂರ್ವ ಕಾಲೇಜು , ವಾಮಂಜೂರು ಇದರ ಬೆಳ್ಳಿ ಹಬ್ಬದ ಲಾಂಛನವು
             ನಮ್ಮ ಶಿಕ್ಷಣ ದರ್ಶನದ ಆಳವಾದ ಅರ್ಥವನ್ನು ಪ್ರತಿಬಿಂಬಿಸುತ್ತದೆ. ಈ ಲಾಂಛನದಲ್ಲಿ
@@ -47,6 +61,16 @@ const page = () => {
             life for all&rsquo; ಎಂಬ ಸಾಲು ಸೇವೆಯ 25ನೇ ವರ್ಷಕ್ಕೆ ಕಾಲಿಟ್ಟಿರುವುದು
             ಹೆಮ್ಮೆಯ ಪ್ರತೀಕವಾಗಿದೆ.
           </p>
+
+          {/* Bottom 2 Videos */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 w-full px-4">
+            <video className="w-full rounded-lg" controls>
+              <source src="/videos/video4.mp4" type="video/mp4" />
+            </video>
+            <video className="w-full rounded-lg" controls>
+              <source src="/videos/video5.mp4" type="video/mp4" />
+            </video>
+          </div>
         </CardContent>
       </Card>
     </div>

@@ -40,7 +40,13 @@ const correspondents = [
   },
 ];
 
-const FadeUp = ({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) => {
+const FadeUp = ({
+  children,
+  delay = 0,
+}: {
+  children: React.ReactNode;
+  delay?: number;
+}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -68,7 +74,7 @@ const page = () => {
       <div className="flex justify-center items-center flex-wrap">
         {correspondents.map((person, index) => (
           <FadeUp key={person.name} delay={index * 0.1}>
-            <Card className="bg-white shadow-md m-5">
+            <Card className="bg-white shadow-md w-56 m-5">
               <CardContent className="p-4 flex flex-col items-center">
                 <div className="w-40 h-40 rounded-full relative overflow-hidden">
                   <Image
