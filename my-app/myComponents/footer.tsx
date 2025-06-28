@@ -20,7 +20,7 @@ const footer = () => {
         </div>
       </div>
       <div className="bg-red-900 text-white border-t border-white text-center font-semibold ">
-        <p>contact +91 95130 97816 for Website development.</p>
+        <p>whatsapp: +91 95130 97816 for Website development.</p>
       </div>
     </div>
   );
