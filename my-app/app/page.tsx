@@ -1,5 +1,6 @@
 "use client";
 import { Jublee } from "@/myComponents/Jublee";
+import { motion } from "framer-motion";
 
 import {
   Carousel,
@@ -12,7 +13,7 @@ import Image from "next/image";
 import HomeContent from "@/myComponents/HomeContent";
 import Autoplay from "embla-carousel-autoplay";
 const images = [
- "/College Building.jpg",
+  "/College Building2.png",
   "/heros/heros1.jpeg",
   "/heros/heros2.jpeg",
   "/heros/heros3.jpeg",
@@ -22,7 +23,7 @@ const images = [
 
 const Carosel = () => {
   return (
-    <div className="w-full mt-7 max-w-6xl mx-auto rounded-xl overflow-hidden shadow-xl overflow-x-hidden">
+    <div className="w-full mt-7 sm:mt-2 max-w-6xl mx-auto sm:rounded-xl overflow-hidden shadow-xl overflow-x-hidden">
       <Carousel
         className="w-full"
         plugins={[
@@ -36,12 +37,16 @@ const Carosel = () => {
         <CarouselContent>
           {images.map((img, index) => (
             <CarouselItem key={index}>
-              <div className="relative w-full h-[250px] sm:h-[450px]">
+              <div className="relative w-full h-[250px] sm:h-[490px]">
                 <Image
                   src={img}
                   alt={`${index}`}
                   fill
-                  className="object-cover object-center"
+                  className={
+                    index == 0
+                      ? "object-cover sm:object-bottom "
+                      : "object-cover "
+                  }
                 />
               </div>
             </CarouselItem>
@@ -55,7 +60,12 @@ const Carosel = () => {
 };
 export default function Home() {
   return (
-    <div className="w-full">
+    <motion.div
+      className="w-full"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       <Carosel /> <HomeContent />
       <div className="relative w-full mb-5   flex justify-center items-center overflow-hidden">
         <Image
@@ -68,6 +78,6 @@ export default function Home() {
           <Jublee />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

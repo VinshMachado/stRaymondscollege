@@ -20,11 +20,120 @@ const AnimatedSection = ({ children }: { children: React.ReactNode }) => {
 };
 
 export default function AboutStRaymonds() {
+  const contentSections: [string, React.ReactNode][] = [
+    [
+      "Our Vision",
+      "To promote the glory of God through the holiness of its members and the service of His Kingdom.",
+    ],
+    [
+      "Our Goal",
+      "Transformative Education for Fullness of Life – fostering intellectual growth, emotional balance, and a deep sense of purpose and service.",
+    ],
+    [
+      "A Legacy of Commitment and Growth",
+      "Established in 2001 in response to community needs, with 36 students and strong leadership from Rev. Sr. Inviolatha BS and team, the college has since flourished as a pillar of academic excellence and community development.",
+    ],
+    [
+      "Support from the Bethany Educational Society",
+      "Key contributors include Rev. Sr. Jyoti, Rev. Sr. Wilberta, Rev. Sr. Rose Celine, and Corporate Managers who guided the college’s strategic growth. Currently, the college is supported by Rev Sr Lilly Pereira.",
+    ],
+    [
+      "Dedicated Correspondents",
+      <ul className="list-disc ml-6" key={"thing1"}>
+        {[
+          "Sr. Inviolatha",
+          "Sr. Marie Lyta",
+          "Sr. Christella",
+          "Sr. Mariola",
+          "Sr. Lilly Pereira",
+          "Sr. Shubha",
+          "Sr. Cicilia Mendonca (Current Correspondent)",
+        ].map((name, i) => (
+          <li key={i}>{name}</li>
+        ))}
+      </ul>,
+    ],
+    [
+      "Principals Who Shaped Us",
+      <ul className="list-disc ml-6" key={"thing2"}>
+        {[
+          "Sr. Dr Sadhana BS – Supervisor & Principal (2001–2004, 2015–2021, 2025– )",
+          "Sr. Cicilia Mendonca – Principal (2002–2010)",
+          "Sr. Cicilia D’Souza – Principal (2010–2015)",
+          "Sr. Anita Lydia BS – Principal (2021–2025)",
+        ].map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>,
+    ],
+    [
+      "Academic Streams Offered",
+      <ul className="list-disc ml-6" key={"thing3"}>
+        {["PCMB", "PCMC", "HEBA", "EBAC", "EBAS", "HEPS"].map((stream, i) => (
+          <li key={i}>{stream}</li>
+        ))}
+      </ul>,
+    ],
+    [
+      "",
+      "We serve over 500 students with 18 teaching and 5 non-teaching staff in a nurturing environment.",
+    ],
+    [
+      "Academic Excellence",
+      "Consistent results with an average of 98% and numerous distinctions – a testament to dedicated faculty and hardworking students.",
+    ],
+    [
+      "Holistic Education",
+      <ul className="list-disc ml-6" key={"thing4"}>
+        {[
+          "State and national level sports and cultural activities",
+          "NSS and Rovers & Rangers",
+          "Value education, catechism, and monthly Eucharist",
+          "Seminars, outreach, and excursions",
+        ].map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>,
+    ],
+    [
+      "Facilities",
+      <ul className="list-disc ml-6" key={"thing5"}>
+        {[
+          "Science and Computer Labs",
+          "Rich Library",
+          "Spacious Playground",
+          "Modern Infrastructure",
+        ].map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>,
+    ],
+    [
+      "Silver Jubilee – 2025",
+      <ul className="list-disc ml-6" key={"thing6"}>
+        {[
+          "Science Park",
+          "Poor Students' Fund",
+          "Free education for 90%+ scorers",
+          "College Magazine & Documentary",
+          "Anthem & Celebration Events",
+          "Boosted online presence",
+        ].map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>,
+    ],
+    [
+      "Join Us",
+      "If you seek academic excellence, holistic development, and moral values in a nurturing environment – St Raymond’s PU College is your destination.",
+    ],
+  ];
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-16 text-gray-800 space-y-10 overflow-hidden">
       <AnimatedSection>
         <h1 className="text-2xl sm:text-4xl font-bold text-center text-red-800">
-          St Raymond’s Pre-University College, Vamanjoor
+          {"St Raymond’s Pre-University College, Vamanjoor"}
         </h1>
       </AnimatedSection>
 
@@ -43,72 +152,11 @@ export default function AboutStRaymonds() {
         </AnimatedSection>
       ))}
 
-      {[
-        ["Our Vision", "To promote the glory of God through the holiness of its members and the service of His Kingdom."],
-        ["Our Goal", "Transformative Education for Fullness of Life – fostering intellectual growth, emotional balance, and a deep sense of purpose and service."],
-        ["A Legacy of Commitment and Growth", "Established in 2001 in response to community needs, with 36 students and strong leadership from Rev. Sr. Inviolatha BS and team, the college has since flourished as a pillar of academic excellence and community development."],
-        ["Support from the Bethany Educational Society", "Key contributors include Rev. Sr. Jyoti, Rev. Sr. Wilberta, Rev. Sr. Rose Celine, and Corporate Managers who guided the college’s strategic growth. Currently, the college is supported by Rev Sr Lilly Pereira."],
-        ["Dedicated Correspondents", (
-          <ul className="list-disc ml-6">
-            <li>Sr. Inviolatha</li>
-            <li>Sr. Marie Lyta</li>
-            <li>Sr. Christella</li>
-            <li>Sr. Mariola</li>
-            <li>Sr. Lilly Pereira</li>
-            <li>Sr. Shubha</li>
-            <li>Sr. Cicilia Mendonca (Current Correspondent)</li>
-          </ul>
-        )],
-        ["Principals Who Shaped Us", (
-          <ul className="list-disc ml-6">
-            <li>Sr. Dr Sadhana BS – Supervisor & Principal (2001–2004, 2015–2021, 2025– )</li>
-            <li>Sr. Cicilia Mendonca – Principal (2002–2010)</li>
-            <li>Sr. Cicilia D’Souza – Principal (2010–2015)</li>
-            <li>Sr. Anita Lydia BS – Principal (2021–2025)</li>
-          </ul>
-        )],
-        ["Academic Streams Offered", (
-          <ul className="list-disc ml-6">
-            <li>PCMB</li>
-            <li>PCMC</li>
-            <li>HEBA</li>
-            <li>EBAC</li>
-            <li>EBAS</li>
-            <li>HEPS</li>
-          </ul>
-        )],
-        ["", "We serve over 500 students with 18 teaching and 5 non-teaching staff in a nurturing environment."],
-        ["Academic Excellence", "Consistent results with an average of 98% and numerous distinctions – a testament to dedicated faculty and hardworking students."],
-        ["Holistic Education", (
-          <ul className="list-disc ml-6">
-            <li>State and national level sports and cultural activities</li>
-            <li>NSS and Rovers & Rangers</li>
-            <li>Value education, catechism, and monthly Eucharist</li>
-            <li>Seminars, outreach, and excursions</li>
-          </ul>
-        )],
-        ["Facilities", (
-          <ul className="list-disc ml-6">
-            <li>Science and Computer Labs</li>
-            <li>Rich Library</li>
-            <li>Spacious Playground</li>
-            <li>Modern Infrastructure</li>
-          </ul>
-        )],
-        ["Silver Jubilee – 2025", (
-          <ul className="list-disc ml-6">
-            <li>Science Park</li>
-            <li>Poor Students' Fund</li>
-            <li>Free education for 90%+ scorers</li>
-            <li>College Magazine & Documentary</li>
-            <li>Anthem & Celebration Events</li>
-            <li>Boosted online presence</li>
-          </ul>
-        )],
-        ["Join Us", "If you seek academic excellence, holistic development, and moral values in a nurturing environment – St Raymond’s PU College is your destination."],
-      ].map(([heading, content], i) => (
+      {contentSections.map(([heading, content], i) => (
         <AnimatedSection key={i}>
-          {heading && <h3 className="text-xl font-semibold text-red-700">{heading}</h3>}
+          {heading && (
+            <h3 className="text-xl font-semibold text-red-700">{heading}</h3>
+          )}
           {typeof content === "string" ? <p>{content}</p> : content}
         </AnimatedSection>
       ))}
