@@ -14,7 +14,7 @@ const footer = () => {
         <p className="text-md">Email: srpucv2001@gmail.com</p>
       </div>
     </div>
-    <div className="bg-white text-black text-center font-semibold ">
+    <div className="bg-red-900 text-white text-center font-semibold ">
       <p>Website developed by Sion and Vinish contact +91 95130 97816 for Website development.</p>
     </div>
     </div>
