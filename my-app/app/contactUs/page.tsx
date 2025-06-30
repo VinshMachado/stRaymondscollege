@@ -51,7 +51,7 @@ const page = () => {
               href="mailto:straymondspucollege@gmail.com"
               className="text-blue-600 underline"
             >
-              straymondspucollege@gmail.com
+              srpucv2001@gmail.com
             </a>
           </p>
           <p className="text-gray-700 mt-2">Contact:</p>
@@ -69,6 +69,13 @@ const page = () => {
               className="text-green-600 font-medium underline"
             >
               WhatsApp: 6360508493
+            </Link>
+            <Link
+              href="https://wa.me/9482801764"
+              target="_blank"
+              className="text-green-600 font-medium underline"
+            >
+              WhatsApp: 9482801764
             </Link>
           </div>
         </div>

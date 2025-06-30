@@ -7,10 +7,15 @@ import { motion, useInView } from "framer-motion";
 
 const correspondents = [
   {
-    name: "Rev Sr Roseceline",
+    name: "Rev Sr Rose celine BS",
     image:
       "/Sisters/President - Rev Sr Roseceline BS - Superior General & President BES.jpeg",
     designation: "Superior General & President BES",
+  },
+  {
+    name: "Rev Sr Sandhya BS",
+    image: "/Sisters/Secretary - Rev Sr Sandhya BS .jpeg",
+    designation: "Secretary",
   },
   {
     name: "Rev Sr Lilly Pereira",
@@ -24,19 +29,14 @@ const correspondents = [
     designation: "Correspondent",
   },
   {
-    name: "Rev Sr Sandhya",
-    image: "/Sisters/Secretary - Rev Sr Sandhya BS .jpeg",
-    designation: "Secretary",
+    name: "Sr Lavita BS",
+    image: "/Sisters/Sr Lavita BS - Superior .jpeg",
+    designation: "Superior",
   },
   {
     name: "Sr Dr Sadhana",
     image: "/Sisters/Sr Dr Sadhana BS - Principal.jpeg",
-    designation: "Principal",
-  },
-  {
-    name: "Sr Lavita BS",
-    image: "/Sisters/Sr Lavita BS - Superior .jpeg",
-    designation: "Superior",
+    designation: "Secretary BES",
   },
 ];
 
@@ -67,7 +67,7 @@ const page = () => {
     <div className="max-w-6xl mx-auto px-4 py-12 overflow-hidden">
       <FadeUp>
         <h2 className="text-3xl font-bold text-red-800 text-center mb-10">
-          Dedicated Correspondents
+          Present Office Bearers
         </h2>
       </FadeUp>
 
