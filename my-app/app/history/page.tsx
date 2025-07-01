@@ -1,173 +1,141 @@
 "use client";
+import React, { ReactNode } from "react";
+import { motion } from "framer-motion";
 
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+const sectionVariant = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
-const AnimatedSection = ({ children }: { children: React.ReactNode }) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+const Highlight = ({ children }: { children: React.ReactNode }) => (
+  <span className="text-red-700 font-semibold">{children}</span>
+);
 
+const StRaymondsPUCollege = () => {
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, x: 100 }}
-      animate={isInView ? { opacity: 1, x: 0 } : {}}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-    >
-      {children}
-    </motion.div>
+    <div className="p-6 md:p-12 max-w-5xl mx-auto text-justify space-y-8">
+      <motion.h1
+        className="text-4xl font-bold text-center text-red-800"
+        initial="hidden"
+        animate="visible"
+        variants={sectionVariant}
+      >
+        {"St Raymond’s Pre-University College, Vamanjoor"}
+      </motion.h1>
+
+      <motion.p variants={sectionVariant} initial="hidden" animate="visible">
+        <Highlight>
+          A Beacon of Knowledge, Values, and Holistic Development
+        </Highlight>
+      </motion.p>
+
+      <motion.div variants={sectionVariant} initial="hidden" animate="visible">
+        <p>
+          {`St Raymond’s Pre-University College, Vamanjoor is a
+          government-recognized institution run by the Bethany Educational
+          Society, Mangaluru. Founded by
+          <Highlight>Msgr. R.F.C. Mascharenhas</Highlight>, the Servant of God,
+          it serves the marginalized, especially rural communities and girls.`}
+        </p>
+        <p>
+          Since 2001, it has grown from 36 students to over 500, offering{" "}
+          <Highlight>Science, Commerce, and Arts</Highlight> streams, while
+          emphasizing <Highlight>academic rigor</Highlight>,{" "}
+          <Highlight>co-curricular activities</Highlight>, and{" "}
+          <Highlight>value-based education</Highlight>.
+        </p>
+      </motion.div>
+
+      <motion.div variants={sectionVariant} initial="hidden" animate="visible">
+        <h2 className="text-2xl font-semibold text-red-800">
+          Our Vision & Goal
+        </h2>
+        <p>
+          <Highlight>Vision:</Highlight> To promote the glory of God through
+          holiness and service.
+        </p>
+        <p>
+          <Highlight>Goal:</Highlight> Transformative Education for Fullness of
+          Life – nurturing intellectual growth, emotional balance, and purpose.
+        </p>
+      </motion.div>
+
+      <motion.div variants={sectionVariant} initial="hidden" animate="visible">
+        <h2 className="text-2xl font-semibold text-red-800">Legacy & Growth</h2>
+        <p>
+          Founded by <Highlight>Sr. Inviolatha BS</Highlight>,{" "}
+          <Highlight>Sr. Cicilia Mendonca</Highlight>, and{" "}
+          <Highlight>Sr. Sadhana</Highlight>, the college has thrived through
+          dedicated leadership, including Correspondents like{" "}
+          <Highlight>Sr. Shubha</Highlight> and Principals like{" "}
+          <Highlight>Sr. Dr. Sadhana BS</Highlight>.
+        </p>
+      </motion.div>
+
+      <motion.div variants={sectionVariant} initial="hidden" animate="visible">
+        <h2 className="text-2xl font-semibold text-red-800">
+          Academic Streams
+        </h2>
+        <ul className="list-disc pl-6">
+          <li>PCMB</li>
+          <li>PCMC</li>
+          <li>HEBA</li>
+          <li>EBAC</li>
+          <li>EBAS</li>
+          <li>HEPS</li>
+        </ul>
+        <p>Supported by 18 teaching and 5 non-teaching staff.</p>
+      </motion.div>
+
+      <motion.div variants={sectionVariant} initial="hidden" animate="visible">
+        <h2 className="text-2xl font-semibold text-red-800">
+          Achievements & Holistic Education
+        </h2>
+        <p>
+          With a <Highlight>98% average result</Highlight> and numerous
+          distinctions, students also excel in sports, cultural events, NSS,
+          Rovers & Rangers, and value-based programs.
+        </p>
+      </motion.div>
+
+      <motion.div variants={sectionVariant} initial="hidden" animate="visible">
+        <h2 className="text-2xl font-semibold text-red-800">Facilities</h2>
+        <ul className="list-disc pl-6">
+          <li>Science & Computer Labs</li>
+          <li>Rich Library</li>
+          <li>Spacious Playground</li>
+          <li>Modern Infrastructure</li>
+        </ul>
+        <p>Hosts official exams like SSLC, PUC, CET, and KSET.</p>
+      </motion.div>
+
+      <motion.div variants={sectionVariant} initial="hidden" animate="visible">
+        <h2 className="text-2xl font-semibold text-red-800">
+          Silver Jubilee 2025
+        </h2>
+        <ul className="list-disc pl-6">
+          <li>Science Park</li>
+          <li>{"Poor Students’ Fund"}</li>
+          <li>Free Education for 90%+ scorers</li>
+          <li>College Magazine, Documentary, Anthem</li>
+          <li>Grand Celebrations</li>
+        </ul>
+      </motion.div>
+
+      <motion.div variants={sectionVariant} initial="hidden" animate="visible">
+        <h2 className="text-2xl font-semibold text-red-800">Contact Us</h2>
+        <p>
+          <Highlight>Phone:</Highlight> 9880603858, 6360508493, 9482801764
+          <br />
+          <Highlight>Email:</Highlight> srpucv2001@gmail.com
+        </p>
+        <p>
+          Join us at St Raymond’s PU College – where excellence, values, and
+          holistic growth come together.
+        </p>
+      </motion.div>
+    </div>
   );
 };
 
-export default function AboutStRaymonds() {
-  const contentSections: [string, React.ReactNode][] = [
-    [
-      "Our Vision",
-      "To promote the glory of God through the holiness of its members and the service of His Kingdom.",
-    ],
-    [
-      "Our Goal",
-      "Transformative Education for Fullness of Life – fostering intellectual growth, emotional balance, and a deep sense of purpose and service.",
-    ],
-    [
-      "A Legacy of Commitment and Growth",
-      "Established in 2001 in response to community needs, with 36 students and strong leadership from Rev. Sr. Inviolatha BS and team, the college has since flourished as a pillar of academic excellence and community development.",
-    ],
-    [
-      "Support from the Bethany Educational Society",
-      "Key contributors include Rev. Sr. Jyoti, Rev. Sr. Wilberta, Rev. Sr. Rose Celine, and Corporate Managers who guided the college’s strategic growth. Currently, the college is supported by Rev Sr Lilly Pereira.",
-    ],
-    [
-      "Dedicated Correspondents",
-      <ul className="list-disc ml-6" key={"thing1"}>
-        {[
-          "Sr. Inviolatha",
-          "Sr. Marie Lyta",
-          "Sr. Christella",
-          "Sr. Mariola",
-          "Sr. Lilly Pereira",
-          "Sr. Shubha",
-          "Sr. Cicilia Mendonca (Current Correspondent)",
-        ].map((name, i) => (
-          <li key={i}>{name}</li>
-        ))}
-      </ul>,
-    ],
-    [
-      "Principals Who Shaped Us",
-      <ul className="list-disc ml-6" key={"thing2"}>
-        {[
-          "Sr. Dr Sadhana BS – Supervisor & Principal (2001–2004, 2015–2021, 2025– )",
-          "Sr. Cicilia Mendonca – Principal (2002–2010)",
-          "Sr. Cicilia D’Souza – Principal (2010–2015)",
-          "Sr. Anita Lydia BS – Principal (2021–2025)",
-        ].map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>,
-    ],
-    [
-      "Academic Streams Offered",
-      <ul className="list-disc ml-6" key={"thing3"}>
-        {["PCMB", "PCMC", "HEBA", "EBAC", "EBAS", "HEPS"].map((stream, i) => (
-          <li key={i}>{stream}</li>
-        ))}
-      </ul>,
-    ],
-    [
-      "",
-      "We serve over 500 students with 18 teaching and 5 non-teaching staff in a nurturing environment.",
-    ],
-    [
-      "Academic Excellence",
-      "Consistent results with an average of 98% and numerous distinctions – a testament to dedicated faculty and hardworking students.",
-    ],
-    [
-      "Holistic Education",
-      <ul className="list-disc ml-6" key={"thing4"}>
-        {[
-          "State and national level sports and cultural activities",
-          "NSS and Rovers & Rangers",
-          "Value education, catechism, and monthly Eucharist",
-          "Seminars, outreach, and excursions",
-        ].map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>,
-    ],
-    [
-      "Facilities",
-      <ul className="list-disc ml-6" key={"thing5"}>
-        {[
-          "Science and Computer Labs",
-          "Rich Library",
-          "Spacious Playground",
-          "Modern Infrastructure",
-        ].map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>,
-    ],
-    [
-      "Silver Jubilee – 2025",
-      <ul className="list-disc ml-6" key={"thing6"}>
-        {[
-          "Science Park",
-          "Poor Students' Fund",
-          "Free education for 90%+ scorers",
-          "College Magazine & Documentary",
-          "Anthem & Celebration Events",
-          "Boosted online presence",
-        ].map((item, i) => (
-          <li key={i}>{item}</li>
-        ))}
-      </ul>,
-    ],
-    [
-      "Join Us",
-      "If you seek academic excellence, holistic development, and moral values in a nurturing environment – St Raymond’s PU College is your destination.",
-    ],
-  ];
-
-  return (
-    <div className="max-w-5xl mx-auto px-4 py-16 text-gray-800 space-y-10 overflow-hidden">
-      <AnimatedSection>
-        <h1 className="text-2xl sm:text-4xl font-bold text-center text-red-800">
-          {"St Raymond’s Pre-University College, Vamanjoor"}
-        </h1>
-      </AnimatedSection>
-
-      <AnimatedSection>
-        <h2 className="text-2xl font-semibold text-center text-gray-700">
-          A Beacon of Knowledge, Values, and Holistic Development
-        </h2>
-      </AnimatedSection>
-
-      {[
-        "St Raymond’s Pre-University College, Vamanjoor is a government-recognized institution (Govt. Order No. ED52 SHH 2001, dated 21.06.2001) run by the Bethany Educational Society, Mangaluru. As a minority institution, it upholds the vision of its founder, Msgr. R.F.C. Mascharenhas, who dedicated his life to bringing education to the marginalized.",
-        "From humble beginnings, our institution has grown into a thriving educational hub, lighting the path of success for generations of students.",
-      ].map((text, idx) => (
-        <AnimatedSection key={idx}>
-          <p>{text}</p>
-        </AnimatedSection>
-      ))}
-
-      {contentSections.map(([heading, content], i) => (
-        <AnimatedSection key={i}>
-          {heading && (
-            <h3 className="text-xl font-semibold text-red-700">{heading}</h3>
-          )}
-          {typeof content === "string" ? <p>{content}</p> : content}
-        </AnimatedSection>
-      ))}
-
-      <AnimatedSection>
-        <p className="font-semibold text-center text-gray-700">
-          Sr. Dr. Sadhana BS
-          <br />
-          Principal
-        </p>
-      </AnimatedSection>
-    </div>
-  );
-}
+export default StRaymondsPUCollege;
