@@ -33,8 +33,9 @@ const StRaymondsPUCollege = () => {
         <p>
           {`St Raymond’s Pre-University College, Vamanjoor is a
           government-recognized institution run by the Bethany Educational
-          Society, Mangaluru. Founded by
-          <Highlight>Msgr. R.F.C. Mascharenhas</Highlight>, the Servant of God,
+          Society, Mangaluru. Founded by `}
+          <Highlight>Msgr. R.F.C. Mascharenhas</Highlight>
+          {` the Servant of God,
           it serves the marginalized, especially rural communities and girls.`}
         </p>
         <p>
