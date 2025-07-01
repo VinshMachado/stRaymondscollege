@@ -7,7 +7,7 @@ const sectionVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-const Highlight = ({ children }: { children: React.ReactNode }) => (
+const Highlight = ({ children }: { children: ReactNode }) => (
   <span className="text-red-700 font-semibold">{children}</span>
 );
 
