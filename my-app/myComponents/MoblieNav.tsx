@@ -49,7 +49,7 @@ const MoblieNav = () => {
           <SelectItem value="Streams Offered">Streams Offered</SelectItem>
           <SelectItem value="Contact Us">Contact Us</SelectItem>
           <SelectItem value="Gallery">Gallery</SelectItem>
-          <SelectItem value="Commiitte Member">Commiitte Member</SelectItem>
+          <SelectItem value="Commiitte Member">Committee Member</SelectItem>
 
           <SelectLabel>About Us</SelectLabel>
           <SelectItem value="Vision and Mission">Vision and Mission</SelectItem>
@@ -62,7 +62,7 @@ const MoblieNav = () => {
           <SelectLabel>Events</SelectLabel>
           <SelectItem value="Environment Day">Environment Day</SelectItem>
           <SelectItem value="Annual Day">Annual Day</SelectItem>
-          
+
           <SelectItem value="Upcoming programs">Upcoming programs</SelectItem>
         </SelectGroup>
       </SelectContent>
