@@ -30,7 +30,6 @@ const MoblieNav = () => {
       "Message from the Principal": "/principle",
       "Environment Day": "/envDay",
       "Annual Day": "/annualDay",
-      "Upcoming programs": "/program",
     };
 
     const path = routes[value];
@@ -62,8 +61,6 @@ const MoblieNav = () => {
           <SelectLabel>Events</SelectLabel>
           <SelectItem value="Environment Day">Environment Day</SelectItem>
           <SelectItem value="Annual Day">Annual Day</SelectItem>
-
-          <SelectItem value="Upcoming programs">Upcoming programs</SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>
