@@ -270,7 +270,8 @@ const StRaymondsCollege = () => {
         <br />
         • A Science Park to inspire scientific exploration and innovation
         <br />
-        • A Poor Students' Fund to support financially disadvantaged learners
+        • A Poor Students&apos; Fund to support financially disadvantaged
+        learners
         <br />
         • Free education for students who score above 90%, academic year
         <br />
