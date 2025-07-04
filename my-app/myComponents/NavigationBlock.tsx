@@ -59,9 +59,6 @@ export function NavigationBlock() {
                   <NavigationMenuLink asChild className="bg-white">
                     <Link href="/annualDay">Annual Day</Link>
                   </NavigationMenuLink>
-                  <NavigationMenuLink asChild className="bg-white">
-                    <Link href="/program">Upcoming programs</Link>
-                  </NavigationMenuLink>
                 </li>
               </ul>
             </NavigationMenuContent>

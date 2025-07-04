@@ -36,7 +36,7 @@ const correspondents = [
   {
     name: "Sr Dr Sadhana",
     image: "/Sisters/Sr Dr Sadhana BS - Principal.jpeg",
-    designation: "Secretary BES",
+    designation: "Principal",
   },
 ];
 
