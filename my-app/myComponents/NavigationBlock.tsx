@@ -16,7 +16,7 @@ export function NavigationBlock() {
   return (
     <NavigationMenu viewport={false}>
       <NavigationMenuList>
-        <div className=" flex-wrap flex justify-center items-center gap-4 ">
+        <div className=" flex-wrap flex justify-center items-center gap-2 ">
           <Link href="/" className="text-white text-xl m-3 hover:border-b-2">
             Home
           </Link>
@@ -24,6 +24,7 @@ export function NavigationBlock() {
             <NavigationMenuTrigger className="bg-red-900 hover:border-b-2 text-white text-xl hover:bg-red-900">
               About Us
             </NavigationMenuTrigger>
+
             <NavigationMenuContent className="bg-white">
               <ul className="grid w-[200px] gap-4 bg-white">
                 <li className="bg-white">
@@ -69,6 +70,12 @@ export function NavigationBlock() {
             className="text-white text-xl m-3 hover:border-b-2"
           >
             Streams Offered
+          </Link>
+          <Link
+            href="/upcomming"
+            className="text-white text-xl m-3 hover:border-b-2"
+          >
+            Upcomming events
           </Link>
 
           <Link
