@@ -19,9 +19,6 @@ const footer = () => {
           <p className="text-md">Email: srpucv2001@gmail.com</p>
         </div>
       </div>
-      <div className="bg-red-900 text-white border-t border-white text-center font-semibold ">
-        <p>whatsapp: +91 95130 97816 for Website development.</p>
-      </div>
     </div>
   );
 };

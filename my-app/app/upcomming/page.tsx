@@ -7,40 +7,7 @@ const page = () => {
       {/* Image Box 1 */}
       <div className="w-full h-[500px] relative">
         <Image
-          src="/WhatsApp Image 2025-07-13 at 9.20.16 AM.jpeg"
-          alt="image"
-          fill
-          className="object-contain"
-        />
-      </div>
-      <div className="w-full h-[500px] relative">
-        <Image
-          src="/WhatsApp Image 2025-07-13 at 9.20.17 AM (1).jpeg"
-          alt="image"
-          fill
-          className="object-contain"
-        />
-      </div>
-
-      <div className="w-full h-[500px] relative">
-        <Image
-          src="/WhatsApp Image 2025-07-13 at 9.20.17 AM.jpeg"
-          alt="image"
-          fill
-          className="object-contain"
-        />
-      </div>
-      <div className="w-full h-[500px] relative">
-        <Image
-          src="/WhatsApp Image 2025-07-15 at 1.33.39 PM.jpeg"
-          alt="image"
-          fill
-          className="object-contain"
-        />
-      </div>
-      <div className="w-full h-[500px] relative">
-        <Image
-          src="/WhatsApp Image 2025-07-15 at 11.32.46 AM.jpeg"
+          src="/WhatsApp Image 2025-07-24 at 2.43.44 PM.jpeg"
           alt="image"
           fill
           className="object-contain"

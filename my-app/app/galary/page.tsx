@@ -6,6 +6,15 @@ import { motion, useInView } from "framer-motion";
 
 const page = () => {
   const galleries = {
+    "Alumni meet held  on 27/07/2025 at St Raymond's PU College. Vamanjoor": {
+      path: "GalleryImages/alumnimeet",
+      images: [
+        { image: "1.jpeg", width: 320, height: 230 },
+        { image: "2.jpeg", width: 320, height: 230 },
+        { image: "3.jpeg", width: 320, height: 230 },
+        { image: "4.jpeg", width: 320, height: 230 },
+      ],
+    },
     "PTA Annual General Body Meeting – Academic Year 2025–2026": {
       path: "GalleryImages/annualbodymeet",
       images: [
